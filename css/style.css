@@ -11,9 +11,7 @@
     transition: .5s;
 }
 
-.btn:hover {
-    /* Removed box-shadow hover effect */
-}
+/* Hover effects handled by other rules */
 
 .btn-dark:hover {
     background-color: var(--dark) !important;
@@ -60,7 +58,12 @@ body {
     font-family: 'Satoshi', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Satoshi', sans-serif;
 }
 
@@ -101,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
     }
@@ -121,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 .feature-card:hover {
     border-color: var(--primary);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .price-carousel::after {
@@ -145,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .price-carousel .owl-nav .owl-prev,
-.price-carousel .owl-nav .owl-next{
+.price-carousel .owl-nav .owl-next {
     position: relative;
     margin: 0 5px;
     width: 45px;
@@ -261,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     z-index: 1050;
-    background-color: rgba(0,0,0,0.3) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
     padding: 20px 0;
 }
 
@@ -297,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 8px;
         padding: 15px;
     }
-    
+
     #navbarCollapse * {
         background-color: var(--primary) !important;
         background: var(--primary) !important;
@@ -308,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: url('../img/hero.jpeg') center/cover;
+    background: url('../img/hero_restoration.png') center/cover;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -360,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
@@ -378,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     align-items: center;
