@@ -111,7 +111,7 @@ h6 {
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    background: url(../img/hero.png) top right no-repeat;
     background-size: cover;
 }
 
@@ -311,7 +311,7 @@ h6 {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: url('../img/hero_restoration.png') center/cover;
+    background: url('../img/hero.png') center/cover;
     display: flex;
     align-items: center;
     overflow: hidden;
