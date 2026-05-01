@@ -54,8 +54,9 @@
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="products.html" class="nav-item nav-link">Products</a>
                         <a href="#blog" class="nav-item nav-link">Blog</a>
-                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#pathways" class="nav-item nav-link">Pathways</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -74,8 +75,9 @@
                             <a href="#home" class="nav-link active">Home</a>
                             <a href="#about" class="nav-link">About</a>
                             <a href="#services" class="nav-link">Services</a>
+                            <a href="products.html" class="nav-link">Products</a>
                             <a href="#blog" class="nav-link">Blog</a>
-                            <a href="#pricing" class="nav-link">Pricing</a>
+                            <a href="#pathways" class="nav-link">Pathways</a>
                             <a href="#contact" class="nav-link">Contact</a>
                         </div>
                     </div>
@@ -87,23 +89,47 @@
 
 
     <!-- Hero Start -->
-    <div class="hero-section" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Restore Your Health. Rebuild Your Strength. Reclaim Your Life.</h1>
-                        <p class="hero-subtitle">Structured Organ Repair. Preventive Wellness. Complete Restoration.
-                        </p>
+    <div id="header-carousel" class="carousel slide carousel-fade hero-section" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/hero.png" alt="Image">
+                <div class="hero-overlay"></div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px; z-index: 3; position: relative;">
+                        <h1 class="hero-title animated zoomIn">Restore Your Health. Rebuild Your Strength. Reclaim Your Life.</h1>
+                        <p class="hero-subtitle animated zoomIn">Structured Organ Repair. Preventive Wellness. Complete Restoration.</p>
                         <div class="hero-buttons">
-                            <a href="#" class="btn btn-primary btn-lg me-3">Book Your Consultation</a>
-                            <a href="#" class="btn btn-outline-light btn-lg">Explore Our Programs</a>
+                            <a href="#contact" class="btn btn-primary btn-lg me-3 animated slideInLeft">Book Your Consultation</a>
+                            <a href="products.html" class="btn btn-outline-light btn-lg animated slideInRight">Explore Our Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="img/carousel.jpg" alt="Image">
+                <div class="hero-overlay"></div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px; z-index: 3; position: relative;">
+                        <h1 class="hero-title animated zoomIn">Advanced Organ Repair.</h1>
+                        <p class="hero-subtitle animated zoomIn">Specialized pathways for Kidney, Liver, and Cardiac restoration.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3 animated slideInLeft">Find An Expert</a>
+                            <a href="products.html" class="btn btn-outline-light btn-lg animated slideInRight">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <!-- Hero End -->
 
@@ -305,8 +331,8 @@
     <!-- Appointment End -->
 
 
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5" id="pricing">
+    <!-- Pathways Plan Start -->
+    <div class="container-fluid py-5" id="pathways">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
                 <h5 class="d-inline-block text-primary border-bottom border-5">Structured 3-6 Month Therapeutic Pathways
@@ -365,7 +391,51 @@
             </div>
         </div>
     </div>
-    <!-- Pricing Plan End -->
+    <!-- Pathways Plan End -->
+
+
+    <!-- Specialized Programs Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary border-bottom border-5">Our Programs</h5>
+                <h1 class="display-4">Specialized Restoration Programs</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-12">
+                    <div class="program-img-wrapper">
+                        <img class="img-fluid w-100" src="products/program.jpg" alt="Specialized Programs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Specialized Programs End -->
+
+
+    <!-- Products CTA Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-4">Discover Our Wellness Products</h1>
+                    <p class="fs-5 text-muted mb-4">We provide scientifically backed, natural supplements and products designed to support your journey to restoration and health. From cardiovascular support to cellular regeneration.</p>
+                    <a href="products.html" class="btn btn-primary rounded-pill py-3 px-5">View All Products</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img class="img-fluid rounded-3 shadow-sm" src="products/photo_2026-05-01_06-05-12.jpg" alt="Product 1">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid rounded-3 shadow-sm" src="products/photo_2026-05-01_06-05-31.jpg" alt="Product 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products CTA End -->
 
 
     <!-- Team Start -->
@@ -408,30 +478,7 @@
     <!-- Team End -->
 
 
-    <!-- Search Start -->
-    <div class="container-fluid bg-primary my-5 py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-white border-bottom border-5">Find A Program</h5>
-                <h1 class="display-4 mb-4">Start Your Recovery Journey</h1>
-                <h5 class="text-white fw-normal">Our structured 3-6 month pathways are designed to restore function and
-                    build lasting resilience. Select a focus area to begin your transformation.</h5>
-            </div>
-            <div class="mx-auto" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <select class="form-select border-primary w-25" style="height: 60px;">
-                        <option selected>Department</option>
-                        <option value="1">Department 1</option>
-                        <option value="2">Department 2</option>
-                        <option value="3">Department 3</option>
-                    </select>
-                    <input type="text" class="form-control border-primary w-50" placeholder="Keyword">
-                    <button class="btn btn-dark border-0 w-25">Search</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Search End -->
+
 
 
     <!-- Testimonial Start -->
@@ -522,11 +569,10 @@
                     </h4>
                     <p class="mb-4">Preventive Wellness | Organ Restoration | Structured Care. Clear plans. Disciplined
                         action. Measurable progress.</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Wellness District, Accra,
-                        Ghana
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>3rd Banana Ln, Accra, Ghana
                     </p>
                     <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>care@prenticememorial.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+233 20 000 0000</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+233 54 074 6995</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary border-bottom border-5 border-secondary mb-4">Quick Links
@@ -535,6 +581,7 @@
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="products.html"><i class="fa fa-angle-right me-2"></i>Our Products</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
                         <a class="text-light mb-2" href="https://softlifemindset.blogspot.com/" target="_blank"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
@@ -544,31 +591,17 @@
                     <h4 class="d-inline-block text-primary border-bottom border-5 border-secondary mb-4">Popular Links
                     </h4>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="https://softlifemindset.blogspot.com/" target="_blank"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="index.html#services"><i class="fa fa-angle-right me-2"></i>Organ Restoration</a>
+                        <a class="text-light mb-2" href="index.html#services"><i class="fa fa-angle-right me-2"></i>Lifestyle Correction</a>
+                        <a class="text-light mb-2" href="index.html#pathways"><i class="fa fa-angle-right me-2"></i>Therapeutic Pathways</a>
+                        <a class="text-light mb-2" href="products.html"><i class="fa fa-angle-right me-2"></i>Wellness Products</a>
+                        <a class="text-light mb-2" href="index.html#services"><i class="fa fa-angle-right me-2"></i>Stroke Recovery</a>
+                        <a class="text-light" href="index.html#services"><i class="fa fa-angle-right me-2"></i>Kidney Support</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary border-bottom border-5 border-secondary mb-4">Newsletter</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
                     <h6 class="text-primary mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.instagram.com/softlifemindset?igsh=MWxnYmppMnhzNDR3cQ=="><i
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -593,7 +626,7 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/233540746995" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
