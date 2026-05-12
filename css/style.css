@@ -311,10 +311,19 @@ h6 {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: url('../img/hero.png') center/cover;
     display: flex;
     align-items: center;
     overflow: hidden;
+    background: #000; /* Dark fallback instead of green */
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .hero-overlay {
@@ -368,13 +377,44 @@ h6 {
     transform: scale(1.05);
 }
 
+@media (max-width: 991.98px) {
+    .hero-section,
+    .carousel-inner,
+    .carousel-item {
+        min-height: 600px; /* Increased height for mobile */
+    }
+
+    .hero-section {
+        padding: 0; /* Remove padding to let carousel items fill */
+    }
+
+    .carousel-item {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 !important;
     }
 }
 
@@ -540,4 +580,45 @@ h6 {
     border: 2px solid rgba(255,255,255,0.1);
     border-radius: 20px;
     pointer-events: none;
-}
+}
+
+/* Responsive Section Padding & Typography */
+@media (max-width: 768px) {
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .display-4 {
+        font-size: 2.25rem !important;
+        font-weight: 700 !important;
+    }
+
+    .appointment-form-container {
+        padding: 1.5rem !important;
+    }
+
+    .testimonial-item p {
+        font-size: 1.15rem !important;
+    }
+
+    .team-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .team-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    .display-4 {
+        font-size: 1.75rem !important;
+    }
+}
+
