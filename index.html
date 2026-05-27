@@ -91,7 +91,20 @@
     <!-- Hero Start -->
     <div id="header-carousel" class="carousel slide carousel-fade hero-section" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('img/hero.png');">
+            <div class="carousel-item active" style="background-image: url('img/reception_page-0001.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px; z-index: 3; position: relative;">
+                        <h1 class="hero-title animated zoomIn">Welcome to Prentice Memorial Wellness</h1>
+                        <p class="hero-subtitle animated zoomIn">Experience a holistic approach to your wellness journey.</p>
+                        <div class="hero-buttons">
+                            <a href="#appointment" class="btn btn-primary btn-lg me-3 animated slideInLeft">Book Your Consultation</a>
+                            <a href="products.html" class="btn btn-outline-light btn-lg animated slideInRight">Explore Our Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('img/hero.png');">
                 <div class="hero-overlay"></div>
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px; z-index: 3; position: relative;">
@@ -397,12 +410,60 @@
                 <h5 class="d-inline-block text-primary border-bottom border-5">Our Programs</h5>
                 <h1 class="display-4">Specialized Restoration Programs</h1>
             </div>
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-12">
-                    <div class="program-img-wrapper">
-                        <img class="img-fluid w-100" src="products/program.jpg" alt="Specialized Programs">
+            <div id="specialized-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Carousel Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center px-2">
+                            <div class="col-lg-5 col-md-6 mb-5 mb-lg-0">
+                                <h1 class="display-4 mb-4">Specialized Restoration</h1>
+                                <p class="fs-5 text-muted mb-4">Our specialized restoration program provides comprehensive pathways for repairing and restoring organ function.</p>
+                                <ul class="list-unstyled mb-4 fs-5 text-muted">
+                                    <li class="mb-3"><i class="fa fa-check text-primary me-3"></i>Organ-specific therapeutic pathways</li>
+                                    <li class="mb-3"><i class="fa fa-check text-primary me-3"></i>Long-term health transformation</li>
+                                    <li class="mb-3"><i class="fa fa-check text-primary me-3"></i>Clear roadmap to recovery</li>
+                                    <li><i class="fa fa-check text-primary me-3"></i>Supervised progress tracking</li>
+                                </ul>
+                                <p class="fs-5 text-muted mb-4">We do not just manage symptoms; we focus on healing from the source to give you back your vitality.</p>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <img class="img-fluid rounded-3 shadow-sm w-100" src="products/program.jpg" alt="Specialized Program">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Item 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center px-2">
+                            <div class="col-lg-5 col-md-6 mb-5 mb-lg-0">
+                                <h1 class="display-4 mb-4">Natural Balance</h1>
+                                <p class="fs-5 text-muted mb-4">Achieve optimal health through holistic approaches and precise nutritional optimization designed to help maintain your body's natural equilibrium.</p>
+                                <ul class="list-unstyled mb-4 fs-5 text-muted">
+                                    <li class="mb-3"><i class="fa fa-check text-primary me-3"></i>Nutritional optimization plans</li>
+                                    <li class="mb-3"><i class="fa fa-check text-primary me-3"></i>Holistic lifestyle correction</li>
+                                    <li class="mb-3"><i class="fa fa-check text-primary me-3"></i>Preventive wellness strategies</li>
+                                    <li><i class="fa fa-check text-primary me-3"></i>Targeted herbal supplementation</li>
+                                </ul>
+                                <p class="fs-5 text-muted mb-4">Find the balance you need to support long-lasting wellness, inner harmony, and enduring health.</p>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <img class="img-fluid rounded-3 shadow-sm w-100" src="img/natural balance_page-0001.jpg" alt="Natural Balance Program">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#specialized-carousel" data-bs-slide="prev" style="width: 8%;">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#specialized-carousel" data-bs-slide="next" style="width: 8%;">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </div>
+                </button>
             </div>
         </div>
     </div>

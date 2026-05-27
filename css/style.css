@@ -317,7 +317,7 @@ h6 {
     background: #000; /* Dark fallback instead of green */
 }
 
-.carousel-item {
+.hero-section .carousel-item {
     height: 100vh;
     min-height: 500px;
     background-size: cover;
@@ -379,8 +379,8 @@ h6 {
 
 @media (max-width: 991.98px) {
     .hero-section,
-    .carousel-inner,
-    .carousel-item {
+    .hero-section .carousel-inner,
+    .hero-section .carousel-item {
         min-height: 600px; /* Increased height for mobile */
     }
 
@@ -388,7 +388,7 @@ h6 {
         padding: 0; /* Remove padding to let carousel items fill */
     }
 
-    .carousel-item {
+    .hero-section .carousel-item {
         display: flex !important;
         align-items: center;
         justify-content: center;
